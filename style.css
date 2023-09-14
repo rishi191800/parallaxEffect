@@ -17,6 +17,14 @@ body{
     perspective: 10px;
 }
 
+#wrapper::-webkit-scrollbar{
+    width: 0;
+}
+
+#wrapper::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
 .container{
     height: 100%;
     width: 100%;
