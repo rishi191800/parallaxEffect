@@ -1,14 +1,9 @@
 
 let footer = document.getElementById('footer');
+let wrapper = document.getElementById('wrapper')
 
-
-window.addEventListener('scroll', ()=>{
-    if( window.scrollY > 30000){
-        footer.classList.add('footerAdd');
-    }
-    else{
-        footer.classList.remove('footerAdd');
-    }
+wrapper.addEventListener('scroll', function(){
+    let scrolled = this.scrollTop;
 })
 
 let dateSpan = document.getElementById('date');

@@ -8,13 +8,22 @@
 
 body{
     font-family: arvo, arial;
+    overflow-x: hidden;
 }
 
 #wrapper{
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: scroll;
     perspective: 10px;
+}
+
+#wrapper::-webkit-scrollbar {
+    width: 0;
+}
+
+#wrapper::-webkit-scrollbar-thumb{
+    background-color: transparent;
 }
 
 .container{
@@ -64,7 +73,7 @@ section{
     padding: 5rem 0;
 }
 
-.advantureTime{
+.adventureTime{
     font-size: 5rem;
     padding: 0 10rem;
 }
@@ -95,25 +104,25 @@ section{
 }
 
 .bg1{
-    background-image: url(./sport-1.jpg);
+    background-image: url(./images/sport-1.jpg);
 }
 
 .bg2{
-    background-image: url(.//sport-2.jpg);
+    background-image: url(./images/sport-2.jpg);
 }
 
 .bg3{
-    background-image: url(./sport-3.jpg);
+    background-image: url(./images/sport-3.jpg);
 }
 
-footer{
+#footer{
+    /* position: absolute;
+    bottom: 0; */
+    width: 100vw;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     background-color: rgb(45, 45, 45);
-}
-
-.footerAdd{
-    display: none;
 }
